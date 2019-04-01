@@ -1,10 +1,10 @@
 // Import stylesheets
 import './style.css';
-//var MYAPP = require('./Module/myapp').MYAPP;
+var MYAPP = require('./Module/myapp');
 console.log(MYAPP);
 // Write Javascript code!
 const appDiv = document.getElementById('app');
 
 let MYAPP = MYAPP || { init:'JS Starter'};
 
-appDiv.innerHTML = `<h1>${MYAPP.init}</h1>`;
+appDiv.innerHTML = `<h1>${JSON.stringify(MYAPP)}</h1>`;
